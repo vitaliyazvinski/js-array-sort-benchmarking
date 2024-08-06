@@ -5,8 +5,9 @@ The following sorting algorithms are implemented and used for benchmarking at th
 
 1. Insertion Sort
 2. Quick sort
-3. Merge sort
-4. Counting sort (since array elements are integers)
+3. Quick sort with random pivot
+4. Merge sort
+5. Counting sort (since array elements are integers)
 
 ## How to run
 
