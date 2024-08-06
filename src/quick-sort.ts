@@ -1,10 +1,10 @@
-function swap(arr: number[], x: number, y: number) {
+export function swap(arr: number[], x: number, y: number) {
   const tmp = arr[x];
   arr[x] = arr[y];
   arr[y] = tmp;
 }
 
-function partition(arr: number[], p: number, r: number): number {
+export function partition(arr: number[], p: number, r: number): number {
   const pivot = arr[r];
   let i = p - 1;
 

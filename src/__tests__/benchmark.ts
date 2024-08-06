@@ -2,6 +2,7 @@ import quickSort from "../quick-sort";
 import insertionSort from "../insertion-sort";
 import mergeSort from "../merge-sort";
 import countingSort from "../counting-sort";
+import randomizedQuickSort from "../randomized-qs";
 
 function time(fn: () => void) {
   const before = Date.now();
@@ -48,6 +49,10 @@ describe("pseudo random array sort benchmarking", () => {
       time(() => quickSort(sampleArray.slice(0, n)))
     );
     console.log(
+      `randomized-quick-sort: `,
+      time(() => randomizedQuickSort(sampleArray.slice(0, n)))
+    );
+    console.log(
       `insertion-sort: `,
       time(() => insertionSort(sampleArray.slice(0, n)))
     );
@@ -78,6 +83,10 @@ describe("pseudo random array sort benchmarking", () => {
       time(() => quickSort(sampleArray.slice(0, n)))
     );
     console.log(
+      `randomized-quick-sort: `,
+      time(() => randomizedQuickSort(sampleArray.slice(0, n)))
+    );
+    console.log(
       `insertion-sort: `,
       time(() => insertionSort(sampleArray.slice(0, n)))
     );
@@ -106,6 +115,10 @@ describe("pseudo random array sort benchmarking", () => {
     console.log(
       `quick-sort: `,
       time(() => quickSort(sampleArray.slice(0, n)))
+    );
+    console.log(
+      `randomized-quick-sort: `,
+      time(() => randomizedQuickSort(sampleArray.slice(0, n)))
     );
     console.log(
       `insertion-sort: `,
@@ -141,6 +154,10 @@ describe("reversed array sort benchmarking", () => {
       time(() => quickSort(sampleArray.slice(0, n)))
     );
     console.log(
+      `randomized-quick-sort: `,
+      time(() => randomizedQuickSort(sampleArray.slice(0, n)))
+    );
+    console.log(
       `insertion-sort: `,
       time(() => insertionSort(sampleArray.slice(0, n)))
     );
@@ -167,6 +184,10 @@ describe("reversed array sort benchmarking", () => {
       time(() => quickSort(sampleArray.slice(0, n)))
     );
     console.log(
+      `randomized-quick-sort: `,
+      time(() => randomizedQuickSort(sampleArray.slice(0, n)))
+    );
+    console.log(
       `insertion-sort: `,
       time(() => insertionSort(sampleArray.slice(0, n)))
     );
@@ -191,6 +212,10 @@ describe("reversed array sort benchmarking", () => {
     console.log(
       `quick-sort: `,
       time(() => quickSort(sampleArray.slice(0, n)))
+    );
+    console.log(
+      `randomized-quick-sort: `,
+      time(() => randomizedQuickSort(sampleArray.slice(0, n)))
     );
     console.log(
       `insertion-sort: `,
